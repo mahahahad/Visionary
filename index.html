@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="./dist/index.css" />
     <title>Visionary</title>
   </head>
   <body>
-    <section class="intro"></section>
+    <!-- Ignore these -->
+    <!-- Used for easier styling of icons -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="0"
+      width="0"
+      viewbox="0 0 48 48"
+    >
+      <path
+        id="chevronLeft"
+        d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"
+      />
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="0"
+      width="0"
+      viewbox="0 0 48 48"
+    >
+      <path
+        id="chevronRight"
+        d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"
+      />
+    </svg>
+
+    <section class="intro">
+      <div class="controls">
+        <button class="prev">
+          <svg width="48" height="48" viewbox="0 0 48 48">
+            <use href="#chevronLeft" />
+          </svg>
+        </button>
+        <button class="next">
+          <svg width="48" height="48" viewbox="0 0 48 48">
+            <use href="#chevronRight" />
+          </svg>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
